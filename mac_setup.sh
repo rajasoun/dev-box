@@ -22,10 +22,10 @@ function gem_installed() {
 
 # Run a noop command as sudo, so that the rest of the script runs during
 # the sudo grace period
-# echo "Getting sudo privileges. Enter your account password if prompted"
-# sudo /bin/date > /dev/null 2>&1
+echo "Getting sudo privileges. Enter your account password if prompted"
+sudo /bin/date > /dev/null 2>&1
 
-# sudo chown -R `whoami` /usr/local
+sudo chown -R `whoami` /usr/local
 
 # Configure curl to always show progress bars
 echo progress-bar >> ~/.curlrc
