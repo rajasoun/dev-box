@@ -155,7 +155,7 @@ gem update --system
 
 xcode-select -switch /Library/Developer/CommandLineTools
 gem_installed "bundler"    || gem install bundler
-gem_installed  "nokogiri"  || gem install nokogiri -- --use-system-libraries
+gem_installed "nokogiri"   || gem install nokogiri -- --with-xml2-include=/usr/local/include/libxml2 --with-xml2-lib=/usr/local/lib
 
 # NVM, Node.js, and NPMS
 ########################
