@@ -26,7 +26,8 @@ echo "export KC_DIR=/Users/$USER/Workspace/B2B/knowledgecenter" >> ~/.bashrc
 ##### Cloning From  Git Repo
 ```sh
 git clone git@206.80.58.87:b2b/knowledgecenter.git
-git clone git@206.80.58.87:b2b/ui-vagrant.git
+#git clone git@206.80.58.87:b2b/ui-vagrant.git
+git clone https://github.com/rajasoun/dev-box.git
 ```
 ##### Switch to Vagrant Directory
 ```sh
