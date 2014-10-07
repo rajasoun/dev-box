@@ -1,0 +1,8 @@
+# Custom Vagrant Settings 
+#
+# This file allows to override Default Vagrant settings.
+#
+
+network:
+  ip: 192.168.23.14
+  hostname: t2-qa.xkit.co
