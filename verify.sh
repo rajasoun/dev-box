@@ -1,7 +1,6 @@
 #!/usr/bin/env sh
 
 OUT_FILE="dev_box_verification.out"
-
 ### Utility Functions
 function command_installed () {
 	hash $1 &> /dev/null
@@ -9,6 +8,12 @@ function command_installed () {
 
 function gem_installed() {
 	gem list -i $1 >/dev/null 2>&1
+}
+
+function verify_os_ver() {
+	if [ `uname` = "Darwin" ]; then
+	    echo "Mac OS X :: Version - `sw_vers -productVersion` " >> $OUT_FILE     
+	fi
 }
 
 # $1 - Command Name
@@ -28,6 +33,7 @@ echo "EdaaS Dev Box Pre-requisite Verifier" > $OUT_FILE
 echo "************************************" >> $OUT_FILE
 echo "Developer Profile of " `whoami` >> $OUT_FILE
 
+verify_os_ver
 verify "brew"  "Homebrew "  "`brew -v`"  command
 verify "git"  "Git "  "`git --version`"  command
 verify "java"  "Java"  "`java -version 2>&1 | awk '/version/{print $NF}' `"  command

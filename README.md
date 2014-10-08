@@ -65,8 +65,13 @@ From Host Machine.
 ```sh
 ping t2-qa.xkit.co 
 ```
+From Host Machine. - run the Command to clear the Cache 
+```sh
+dscacheutil -flushcache
+```
+If Ping timeouts, possible Issue with Private IP or /etc/hosts
 
-If Ping timeouts, possible Issue with Private IP
+From Host Machine, Ensure Mac OS X version 10.9.X
 
 ##### Troubleshooting (In Guest Machine)
 To check if the cloned repo is mounted correctly
