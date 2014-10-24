@@ -50,7 +50,7 @@ export KC_DIR=$USERPROFILE/Workspace/B2B/knowledgecenter
 vagrant up
 ```
 
-> ######_Goto [T2 QA](t2-qa.xkit.co "T2-QA") to see the Magic_
+> ######_Goto [T2 QA](https://t2-qa.xkit.co "T2-QA") to see the Magic_
 
 #Optional steps
 
