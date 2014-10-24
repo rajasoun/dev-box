@@ -18,12 +18,14 @@ Install the following software on Host Machine
 Installation
 --------------
 ##### Workspace Setup
-Open Windows powershell prompt and run following commands
+Open Windows powershell prompt or git bash terminal ,and,
+run following commands
 ```sh
 sh
 
 gem install nokogiri #Install Nokogiri
 npm install -g nvm #Install NVM
+npm install -g grunt #Install Grunt
 
 cd  $USERPROFILE
 mkdir -p Workspace/B2B 
