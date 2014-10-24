@@ -20,16 +20,16 @@ Install the following software on Host Machine
 Installation
 --------------
 ##### Workspace Setup
-
+Open Windows powershell prompt and run following commands
 ```sh
-cd  C:/
+cd  $USERPROFILE
 mkdir -p Workspace/B2B 
 cd Workspace/B2B
-#echo "export KC_DIR=C:/Workspace/B2B/knowledgecenter" >> ~/.bashrc
+echo "export KC_DIR=$USERPROFILE/Workspace/B2B/knowledgecenter" >> ~/.bashrc
 ```
 ##### Cloning From  Git Repo
 ```sh
-cd c:\workspace\B2B
+cd $USERPROFILE\Workspace\B2B
 git clone https://github.com/rajasoun/dev-box.git
 git clone git@206.80.58.87:b2b/knowledgecenter.git
 ```
@@ -40,13 +40,13 @@ cd dev-box
 
 ##### Automatic Addition to /etc/hosts file on Host Machine
 ```sh
-#vagrant plugin install vagrant-vbguest
-#vagrant plugin install vagrant-hostsupdater
+vagrant plugin install vagrant-vbguest
+vagrant plugin install vagrant-hostsupdater
 ```
 
 ##### Start the Vagrant
 ```sh
-export KC_DIR=/Users/$USER/Workspace/B2B/knowledgecenter
+export KC_DIR=$USERPROFILE/Workspace/B2B/knowledgecenter
 vagrant up
 ```
 
@@ -99,9 +99,6 @@ Cisco
 [Git 2.1.0]:http://github-windows.s3.amazonaws.com/GitHubSetup.exe
 [Node.js]:http://nodejs.org/dist/v0.10.32/x64/node-v0.10.32-x64.msi
 [NVM]: https://www.npmjs.org/package/nvm
-```sh
-npm install nvm
-```
 [Ruby]:https://www.ruby-lang.org/en/downloads/
 [Nokogiri gem]:https://rubygems.org/gems/nokogiri
 
