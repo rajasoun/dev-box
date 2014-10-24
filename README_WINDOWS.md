@@ -1,6 +1,6 @@
 Installation
 ============
-> (Mac OS Support Only)
+> (For Windows platform Only)
 
 Prerequisites
 -------------
