@@ -52,6 +52,7 @@ vagrant plugin install vagrant-hostsupdater
 ##### Start the Vagrant
 ```sh
 export KC_DIR=$USERPROFILE/Workspace/B2B/knowledgecenter
+cd $KC_DIR
 ./build.sh
 vagrant up
 
