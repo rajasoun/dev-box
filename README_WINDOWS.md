@@ -48,7 +48,9 @@ vagrant plugin install vagrant-hostsupdater
 ##### Start the Vagrant
 ```sh
 export KC_DIR=$USERPROFILE/Workspace/B2B/knowledgecenter
+./build.sh
 vagrant up
+
 ```
 
 > ######_Goto [T2 QA](https://t2-qa.xkit.co "T2-QA") to see the Magic_
