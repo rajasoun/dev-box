@@ -22,6 +22,7 @@ Installation
 ##### Workspace Setup
 Open Windows powershell prompt and run following commands
 ```sh
+sh
 cd  $USERPROFILE
 mkdir -p Workspace/B2B 
 cd Workspace/B2B
