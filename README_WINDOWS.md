@@ -13,9 +13,7 @@ Install the following software on Host Machine
 6. [Maven 3.2.3]
 7. [Git 2.1.0]
 8. [Node.js]
-9  [NVM]
-10. [Ruby]
-11. [Nokogiri gem]
+9. [Ruby]
  
 Installation
 --------------
@@ -23,6 +21,10 @@ Installation
 Open Windows powershell prompt and run following commands
 ```sh
 sh
+
+gem install nokogiri #Install Nokogiri
+npm install -g nvm #Install NVM
+
 cd  $USERPROFILE
 mkdir -p Workspace/B2B 
 cd Workspace/B2B
