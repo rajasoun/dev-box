@@ -12,6 +12,8 @@ Install the following software on Host Machine
 5. [JDK 1.7.0_67]
 6. Maven 3.2.3
 7. Git CLI Client 2.1.0
+8. [Node.js & NVM]
+9. [Ruby & Nokogiri gem]
  
 Installation
 --------------
@@ -92,5 +94,7 @@ Cisco
 [JDK 1.7.0_67]:http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
 [Maven 3.2.3]:
 [Git CLI Client 2.1.0]:
+8. [Node.js & NVM]: 
+9. [Ruby & Nokogiri gem]:
 
 
