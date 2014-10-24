@@ -11,9 +11,11 @@ Install the following software on Host Machine
 4. [VirtualBox Hosts Updater Plugin]
 5. [JDK 1.7.0_67]
 6. [Maven 3.2.3]
-7. [Git CLI Client 2.1.0]
-8. [Node.js & NVM]
-9. [Ruby & Nokogiri gem]
+7. [Git 2.1.0]
+8. [Node.js]
+9  [NVM]
+10. [Ruby]
+11. [Nokogiri gem]
  
 Installation
 --------------
@@ -50,6 +52,8 @@ vagrant up
 
 > ######_Goto [T2 QA](t2-qa.xkit.co "T2-QA") to see the Magic_
 
+#Optional steps
+
 ##### Bash Auto Complete Setup for Vagrant
 ```sh
 brew tap homebrew/completions
@@ -73,7 +77,6 @@ dscacheutil -flushcache
 ```
 If Ping timeouts, possible Issue with Private IP or /etc/hosts
 
-From Host Machine, Ensure Mac OS X version 10.9.X
 
 ##### Troubleshooting (In Guest Machine)
 To check if the cloned repo is mounted correctly
@@ -87,14 +90,19 @@ License
 Cisco
 
 **Installable Links**
-[Virtual Box 4.3.16]:https://www.virtualbox.org/wiki/Downloads 
-[Vagrant 1.6.3]:https://dl.bintray.com/mitchellh/vagrant/vagrant_1.6.3.dmg
+[Virtual Box 4.3.16]:http://download.virtualbox.org/virtualbox/4.3.16/VirtualBox-4.3.16-95972-Win.exe
+[Vagrant 1.6.3]:https://dl.bintray.com/mitchellh/vagrant/vagrant_1.6.5.msi
 [VirtualBox Guest Additions Plugin]:https://github.com/dotless-de/vagrant-vbguest
 [VirtualBox Hosts Updater Plugin]:https://github.com/cogitatio/vagrant-hostsupdater
 [JDK 1.7.0_67]:http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html
-[Maven 3.2.3]:
-[Git CLI Client 2.1.0]:
-[Node.js & NVM]: 
-[Ruby & Nokogiri gem]:
+[Maven 3.2.3]:http://mirrors.gigenet.com/apache/maven/maven-3/3.2.3/binaries/apache-maven-3.2.3-bin.zip
+[Git 2.1.0]:http://github-windows.s3.amazonaws.com/GitHubSetup.exe
+[Node.js]:http://nodejs.org/dist/v0.10.32/x64/node-v0.10.32-x64.msi
+[NVM]: https://www.npmjs.org/package/nvm
+```sh
+npm install nvm
+```
+[Ruby]:https://www.ruby-lang.org/en/downloads/
+[Nokogiri gem]:https://rubygems.org/gems/nokogiri
 
 
