@@ -3,9 +3,12 @@ Git Guide
 
 ###Pull/Commit/Push Commands
 ```
-git pull --rebase
+git pull --rebase # Do This EveryDay before modifing any code 
+
 git add "File Names individually"
 git commit -m "Message for the Commit"
+git pull --rebase
+
 git pull --rebase
 git push origin master
 ```
