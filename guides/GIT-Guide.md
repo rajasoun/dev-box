@@ -16,7 +16,48 @@ git reset --hard <commit_id> # To Delete commits from remote or Reset Master To 
 git reset --hard HEAD~1 # To Delete From Local or Reset local to one commmit before
 git commit --amend -m "New message here" #To Update Message Added
 ```
-
+### Git Workflow 
+1. Execute below command , before starting daily work, in that component/sub-system:
+```
+git pull --rebase
+``` 
+2. Make changes in your file(s)
+3. Do:
+                Check the status of your workspace using:
+                                git status
+                To see all your changes, please do:
+                                git diff --color
+                To add all files:
+                                git add *
+                To add one file at a time:
+                                git add  filePath/fileName.ext
+                Then, do:
+                                git commit -m "Commit reason(s)"
+ 
+4. Perform:
+                                                git pull --rebase
+5. On any conflicts, do the following:
+                                1. Open the file in an editor.
+                                2. Keep your or both the changes by editing the file. (e.g)
+                                                The system displays as below (please note that the conflict is shown with separators - The top portion is your current change(s))
+                                                <<<<<<< HEAD
+                                                                                <h1> Activity Settings!!!! - !!!!</h1>
+                                                =======
+                                                                                <h1> Activity Settings!!!!!!!! </h1>
+                                                >>>>>>> Test.pls ignore.
+                                               
+                                                a). The lines with <<<<  , ==== and >>>> show the changes from you & others changes.
+                                                b). Edit the contents to have the required changes.
+                                                                                <h1> Activity Settings!!!!!!!! </h1>
+6. Now, do:
+                                git add *
+                                git rebase --continue
+                               
+7. Please note that, With the above two commands, the branch has switched to your original branch name.
+ 
+8. Please do:
+                                git push origin master
+9. Now your code is pushed into the branch called 'master'  !
 ###Knowing what branch you are on
 Shows the current branch and the number of unpushed commits.
 Also lists the files you've changed and those you still need to add or commit
