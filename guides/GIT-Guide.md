@@ -1,6 +1,7 @@
 Git Guide
 =========
 Kevin
+Hooman
 ###Pull/Commit/Push Commands
 ```
 git pull --rebase # Do This EveryDay before modifing any code 
