@@ -11,6 +11,10 @@ git pull --rebase
 
 git pull --rebase
 git push origin master
+
+git reset --hard <commit_id> # To Delete commits from remote
+git reset --hard HEAD~1 # To Delete From Local
+git commit --amend -m "New message here" #To Update Message Added
 ```
 
 ###Knowing what branch you are on
