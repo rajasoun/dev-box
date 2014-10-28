@@ -67,7 +67,9 @@ git pull --rebase
         ```
 6. Now, do
         ```
-              git add .
+              git add *
+        ```
+        ```
               git rebase --continue
         ```
 7. Please note that, With the above two commands, the branch has switched to your original branch name.
