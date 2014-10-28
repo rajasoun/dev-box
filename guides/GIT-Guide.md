@@ -33,41 +33,50 @@ git pull --rebase
                 ```
     3. To add all files:
                 ```
-                                git add *
+                    git add *
                 ```
-                To add one file at a time:
+    4. To add one file at a time:
                 ```
-                                git add  filePath/fileName.ext
+                    git add  filePath/fileName.ext
                 ```
-                Then, do:
+    5. Then, do:
                 ```
-                                git commit -m "Commit reason(s)"
+                    git commit -m "Commit reason(s)"
                 ```
  
-4. Perform:
-                                                git pull --rebase
+4. Execute the following (this is done so that your changes made above, will be re-based on top of the remote commits):
+                ```
+                    git pull --rebase
+                ```
 5. On any conflicts, do the following:
                                 1. Open the file in an editor.
-                                2. Keep your or both the changes by editing the file. (e.g)
-                                                The system displays as below (please note that the conflict is shown with separators - The top portion is your current change(s))
-                                                ```<<<<<<< HEAD
+                                2. Keep your or both the changes by editing the file. (e.g)The system displays as below (please note that the conflict is shown with separators - The top portion is your current change(s).
+                                                ```
+                                                <<<<<<< HEAD
                                                                                 <h1> Activity Settings!!!! - !!!!</h1>
                                                 =======
                                                                                 <h1> Activity Settings!!!!!!!! </h1>
                                                 >>>>>>> Test.pls ignore.
                                                ```
-                                                a). The lines with <<<<  , ==== and >>>> show the changes from you & others changes.
-                                                b). Edit the contents to have the required changes.
+                                3. The lines with <<<<  , ==== and >>>> show the changes from you & others changes.
+                                4. Edit the contents to have the required changes.
+                                                        ```
                                                                                 <h1> Activity Settings!!!!!!!! </h1>
-6. Now, do:
+                                                        ```
+6. Now, do
+                            ```
                                 git add *
                                 git rebase --continue
+                            ```
                                
 7. Please note that, With the above two commands, the branch has switched to your original branch name.
  
 8. Please do:
+                            ```
                                 git push origin master
+                            ```
 9. Now your code is pushed into the branch called 'master'  !
+
 ###Knowing what branch you are on
 Shows the current branch and the number of unpushed commits.
 Also lists the files you've changed and those you still need to add or commit
