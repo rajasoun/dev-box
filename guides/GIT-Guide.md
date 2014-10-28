@@ -21,15 +21,15 @@ git commit --amend -m "New message here" #To Update Message Added
 ```
 git pull --rebase
 ``` 
-2. Make changes in your file(s)
+2. Make changes in your file(s).
 3. Do the following:
-                a. Check the status of your workspace using:
+    a. Check the status of your workspace using:
                 ```                                
                    git status
                 ```
-                b. To see all your changes, please do:
+    b. To see all your changes, please do:
                 ```
-                                git diff --color
+                   git diff --color
                 ```
                 To add all files:
                 ```
