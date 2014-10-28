@@ -23,15 +23,15 @@ git pull --rebase
 ``` 
 2. Make changes in your file(s).
 3. Do the following:
-    a. Check the status of your workspace using:
+    1. Check the status of your workspace using:
                 ```                                
                    git status
                 ```
-    b. To see all your changes, please do:
+    2. To see all your changes, please do:
                 ```
                    git diff --color
                 ```
-                To add all files:
+    3. To add all files:
                 ```
                                 git add *
                 ```
