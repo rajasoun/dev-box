@@ -40,12 +40,12 @@ git pull --rebase
                                 1. Open the file in an editor.
                                 2. Keep your or both the changes by editing the file. (e.g)
                                                 The system displays as below (please note that the conflict is shown with separators - The top portion is your current change(s))
-                                                <<<<<<< HEAD
+                                                ```<<<<<<< HEAD
                                                                                 <h1> Activity Settings!!!! - !!!!</h1>
                                                 =======
                                                                                 <h1> Activity Settings!!!!!!!! </h1>
                                                 >>>>>>> Test.pls ignore.
-                                               
+                                               ```
                                                 a). The lines with <<<<  , ==== and >>>> show the changes from you & others changes.
                                                 b). Edit the contents to have the required changes.
                                                                                 <h1> Activity Settings!!!!!!!! </h1>
