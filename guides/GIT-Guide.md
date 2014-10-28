@@ -51,6 +51,7 @@ git pull --rebase
 5. On any conflicts, do the following
      1. Open the file in an editor.
      2. Keep your or both the changes by editing the file. (e.g)The system displays as below (please note that the conflict is shown with separators - The top portion is your current change(s).
+     
                                                 ```
                                                 <<<<<<< HEAD
                                                                                 <h1> Activity Settings!!!! - !!!!</h1>
@@ -58,14 +59,16 @@ git pull --rebase
                                                                                 <h1> Activity Settings!!!!!!!! </h1>
                                                 >>>>>>> Test.pls ignore.
                                                ```
-                                3. The lines with <<<<  , ==== and >>>> show the changes from you & others changes.
-                                4. Edit the contents to have the required changes.
+     3. The lines with <<<<  , ==== and >>>> show the changes from you & others changes.
+     4. Edit the contents to have the required changes.
+     
                                                         ```
                                                                                 <h1> Activity Settings!!!!!!!! </h1>
                                                         ```
 6. Now, do
                             ```
                                 git add *
+                                
                                 git rebase --continue
                             ```
                                
