@@ -24,15 +24,25 @@ git pull --rebase
 2. Make changes in your file(s)
 3. Do:
                 Check the status of your workspace using:
-                                git status
+                ```                                
+                   git status
+                ```
                 To see all your changes, please do:
+                ```
                                 git diff --color
+                ```
                 To add all files:
+                ```
                                 git add *
+                ```
                 To add one file at a time:
+                ```
                                 git add  filePath/fileName.ext
+                ```
                 Then, do:
+                ```
                                 git commit -m "Commit reason(s)"
+                ```
  
 4. Perform:
                                                 git pull --rebase
