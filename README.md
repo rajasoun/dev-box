@@ -84,7 +84,7 @@ ls -als /usr/share/nginx/knowledgecenter"
 
 License
 -------
-Cisco
+CCL
 
 **Installable Links**
 [Virtual Box 4.3.16]:https://www.virtualbox.org/wiki/Downloads 
