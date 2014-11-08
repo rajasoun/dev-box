@@ -10,14 +10,15 @@ puts '== Using Settings From vagrant.yml =='
 puts settings.inspect
 
 VAGRANTFILE_API_VERSION = "2"
-$box = "b2b-ui"
+$box = settings["vagrant-name"]
 $box_url = "https://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.5-x86_64-v20140504.box"
 $ip = settings["network"] ["ip"]
 $hostname = settings["network"] ["hostname"]
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   ### Work Around to Fix Vagrant Bug in correctly assigning the provided name to the box
-  config.vm.define :"b2b-ui" do |t|
+    
+  config.vm.define settings["vagrant-name"] do |t|
   end
   config.vm.provider "virtualbox" do |p|
     p.name = $box
