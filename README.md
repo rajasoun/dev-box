@@ -1,4 +1,4 @@
-## This brings up Unbuntu based box
+## This brings up Ubuntu based box
 
 ## Prerequites
 #### Mandatory:
