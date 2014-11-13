@@ -25,3 +25,6 @@ After prerequistes are installed, run following commands in windows command prom
 Go to http://t2-qa.xkit.co
 
 Your vagrant is ready...
+
+### Insight:
+During provisioning, as specified in manifest/default.pp, puppet installs nodejs,openjdk,maven,ruby,nginx and create symlinks /usr/share/nginx/knowledgecenter and /etc/nginx/conf.d/b2b.conf
