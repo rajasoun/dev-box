@@ -21,7 +21,7 @@ run following commands
 ```sh
 sh
 
-gem install nokogiri #Install Nokogiri
+gem install nokogiri -- --use-system-libraries #Install Nokogiri
 npm install -g nvm #Install NVM
 npm install -g grunt #Install Grunt
 
